@@ -1,8 +1,20 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>Frontal Technica</title>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+$(function() {
+$(".tab li").click(function(){
+	var idx = $(".tab li").index(this);
+	$("#contents div").hide();
+	$("#contents div").eq(idx).show();
+	$(".tab li").removeClass('selected');
+	$(this).addClass('selected');
+});
+});
+</script>
 
 <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
@@ -10,14 +22,23 @@
 
 <div id="main">
 	<div id="header" class="element">
-	<div id="title">Fractal Technica</div>
-	<div class="menu">Menu1</div><div class="menu">Menu2</div><div class="menu">Menu3</div>
+		<p id="title">Self-Introduction</p>
+		<ul class="tab">
+			<li id="profile_b" class="selected">プロフィール</li>
+			<li id="mycar_b">愛車</li>
+			<li id="mypc_b">PC</li>
+		</ul>
 	</div>
-	<div id="contents" class="element">
-	
-	</div>
-	<div id="sidebar" class="element">
-	
+	<div id="contents">
+		<div id="profile" class="content">
+		プロフィール
+		</div>
+		<div id="mycar" class="content">
+		愛車
+		</div>
+		<div id="mypc" class="content">
+		PC
+		</div>
 	</div>
 </div>
 </body>
