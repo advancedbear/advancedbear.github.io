@@ -1,5 +1,7 @@
 @CHARSET "UTF-8";
-
+html {
+	overflow-y: scroll;
+}
 * {
 	box-sizing: border-box;
 }
@@ -10,6 +12,15 @@ body {
 	width: 100%;
 	height: 100%;
 	margin: 0;
+}
+
+a {
+	color: #2c3e50;
+	text-decoration:none;
+}
+
+a:hover {
+	color: #999999;
 }
 
 ul {
@@ -113,6 +124,7 @@ table {
 
 .spec td{
 	border: 1px solid #2c3e50;
+	padding-left: 1ex;
 }
 
 .name{
