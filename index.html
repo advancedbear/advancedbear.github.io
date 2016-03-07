@@ -2,21 +2,24 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
+<link media="only screen and (min-width: 0px) and (max-width: 568px)" href="css/style_sp.css" type="text/css" rel="stylesheet" />
+
 <title>Self-Introduction</title>
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript">
 $(function() {
 $(".tab li").click(function(){
 	var idx = $(".tab li").index(this);
-	$("#contents div").hide();
-	$("#contents div").eq(idx).show();
+	$(".content").hide();
+	$(".content").eq(idx).show();
 	$(".tab li").removeClass('selected');
 	$(this).addClass('selected');
 });
 });
 </script>
 
-<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 
@@ -31,7 +34,8 @@ $(".tab li").click(function(){
 	</div>
 	<div id="contents">
 		<div id="profile" class="content">
-		<table><tr><td width="30%"><img src="img/icon.png" width="100%"><br />Illustrator:&nbsp;<a href="http://twitter.com/nyomosuke/" target="_blank">@nyomosuke</a></td><td>
+		<div id="profile_img"><img src="img/icon.png" width="100%"><br />Illustrator:&nbsp;<a href="http://twitter.com/nyomosuke/" target="_blank">@nyomosuke</a></div>
+		<div id="profile_spec">
 		<table class="spec">
 		<tr><th>Name</th><td>くまもっち</td></tr>
 		<tr><th>Twitter</th><td><a href="https://twitter.com/advanced_bear/" target="_blank">@advanced_bear</a></td></tr>
@@ -39,7 +43,7 @@ $(".tab li").click(function(){
 		<tr><th>GitHub</th><td><a href="https://github.com/advancedbear" target="_blank">advancedbear</a></td></tr>
 		<tr><th>Comment</th><td>魅力的な都市ランキング1位の北海道函館市で生活する情報系大学生。自作PCやデジタルガジェットが好き。情報系学生だけどプログラミングはあまりしない。出身は東京。ゲームはFPSと音ゲーをメインにプレー。FPSはBattleField4とスプラトゥーン（TPSだけど）、音ゲーはBeatmaniaIIDX（Copula九段）とBMSをプレー。</td></tr>
 		</table>
-		</td></tr></table>
+		</div>
 		</div>
 
 		<div id="mycar" class="content">

@@ -1,6 +1,6 @@
 @CHARSET "UTF-8";
 html {
-	overflow-y: scroll;
+	overflow-y: auto;
 }
 * {
 	box-sizing: border-box;
@@ -76,9 +76,9 @@ li:hover{
 }
 
 #main {
-	width: 640px;
+	width: 95%;
 	margin: 0 auto;
-	margin-top: 50px;
+	margin-top: 20px;
 }
 
 
@@ -91,7 +91,7 @@ li:hover{
 	text-align: center;
 	color: #2c3e50;
 	font-family: "Times New Roman", serif;
-	font-size: 48px;
+	font-size: 36px;
 	margin: 0;
 }
 
@@ -127,7 +127,7 @@ table {
 	padding-left: 1ex;
 }
 
-.name {
+.name{
 	text-align: center;
 	font-size: 24px;
 	padding: 0;
@@ -138,12 +138,21 @@ table {
 	border: 1px solid rgba(0,0,0,0.1);
 }
 
+img {
+	max-width: 100%;
+	height: auto;
+	width /***/:auto;　
+}
+
 #profile_img {
-	width: 30%;
-	float: left;
+	width: 100%;
+	text-align: center;
+}
+
+#profile_img img {
+	width: 50%;
 }
 
 #profile_spec {
-	float: left;
-	width: 70%;
+	width: 100%;
 }
