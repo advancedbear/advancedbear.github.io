@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
+<link media="only screen and (min-width: 0px) and (max-width: 568px)" href="css/style_sp.css" type="text/css" rel="stylesheet" />
+
+<title>Self-Introduction</title>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+$(function() {
+$(".tab li").click(function(){
+	var idx = $(".tab li").index(this);
+	var pages = ["index.html", "mycar.html", "pc.html", "products.html"];
+	window.location.href = pages[idx];
+});
+});
+</script>
+
+</head>
+<body>
+
+<div id="main">
+	<div id="header" class="element">
+		<p id="title">Self-Introduction</p>
+		<ul class="tab">
+			<li id="profile_b">プロフィール</li>
+			<li id="mycar_b">愛車</li>
+			<li id="mypc_b" class="selected">PC</li>
+			<li id="software">制作物</li>
+		</ul>
+	</div>
+	<div id="contents">
+		<div id="mypc" class="content">
+			<p class="name">メインPC</p>
+			<img src="img/mainPC.jpg" height="240px">
+			<table class="spec">
+			<tr><th>Case</th><td>NZXT H440 (Black + Blue)</td></tr>
+			<tr><th>MotherBoard</th><td>ASUS PRIME B350-PLUS</td></tr>
+			<tr><th>CPU</th><td>AMD Ryzen7 1700 (OC to 3.7GHz)</td></tr>
+			<tr><th>CPU Cooler</th><td>Scythe 虎徹 + Corsair AF120 Quiet LED(Blue)</td></tr>
+			<tr><th>Memory</th><td>Crucial W4U2400CM-8G (8GBx2)</td></tr>
+			<tr><th>GraphicCard</th><td>msi Radeon RX480 GAMING X 4G</td></tr>
+			<tr><th>CaptureCard</th><td>SKNET MonsterTV X3</td></tr>
+			<tr><th>SSD (OS)</th><td>SK Hynix SL300 (240GB)</td></tr>
+			<tr><th>SSD (Games)</th><td>Samsung 840Series (120GB) + 850EVO (240GB) + ADATA SP900 (128GB)</td></tr>
+			<tr><th>HDD (Data)</th><td>WesternDigital WD20EZRX (2TB)</td></tr>
+			<tr><th>PSU</th><td>Scythe KAMARIKI Platinum SPKRP-600 (600W 80+PLATINUM)</td></tr>
+			<tr><th>OS</th><td>Windows10 Home (64bit)</td></tr>
+			<tr><th>KeyBoard</th><td>Archiss ProgresTouch RETRO TKL (CherryMX Brown)</td></tr>
+			<tr><th>Mouse</th><td>Razer Taipan</td></tr>
+			<tr><th>Headphone</th><td>Kingston HyperX Cloud Stinger + Razer Surround Pro</td></tr>]
+			<tr><th>Microphone</th><td>Sony ECM-PCV80U + behringer XENYX 302USB</td></tr>
+			<tr><th>Monitor</th><td>BenQ XL2420Z (1920x1080 144Hz)</td></tr>
+			<tr id="comment"><th>Comment</th><td>函館の自宅で使用している、メインのPC。
+			今時のゲームをプレーするのに不足しない十分なスペックがあり、ゲームから動画エンコードまでそつなくこなす。
+			8コア16スレッドモデルのRyzenを常用範囲でOCし、動画エンコ時間はi7比で1.8倍くらいになりました。</td></tr>
+			</table>
+	
+			<p class="name">録画・サーバーPC</p>
+			<img src="img/serverPC.jpg" height="240px">
+			<table class="spec">
+			<tr><th>Case</th><td>SilverStone SST-PS07B</td></tr>
+			<tr><th>MotherBoard</th><td>ASUS AM1M-A</td></tr>
+			<tr><th>CPU</th><td>AMD Athlon 5350</td></tr>
+			<tr><th>CPU Cooler</th><td>Arctic Alpine M1 Passive</td></tr>
+			<tr><th>Memory</th><td>CFD Elixir W3U1600HQ-4G (4GBx2)</td></tr>
+			<tr><th>SATACard</th><td>ProjectM PCIX2-4PSATA3</td></tr>
+			<tr><th>TV-Tuner Card</th><td>PLEX PX-W3PE Rev.1.3</td></tr>
+			<tr><th>SSD (OS)</th><td>Transcend  TS64GSSD340(64GB)</td></tr>
+			<tr><th>HDD (Data)</th><td>WesternDigital WD20EZRX(2TB)</td></tr>
+			<tr><th>HDD (TVrec1)</th><td>WesternDigital WD20EZRX (2TB)</td></tr>
+			<tr><th>HDD (TVrec2)</th><td>WesternDigital WD30EZRZ-RT (3TB)</td></tr>
+			<tr><th>PSU</th><td>玄人志向 KRPW-P630W/85+ (630W 80+BRONZE)</td></tr>
+			<tr><th>OS</th><td>Windows8.1 (64bit)</td></tr>
+			<tr><th>KeyBoard</th><td>Pokemon Typing Keyboard (Bluetooth)</td></tr>
+			<tr><th>Mouse</th><td>Softbank SB-MO01-BTLS (Bluetooth)</td></tr>
+			<tr><th>Monitor</th><td>LG Flatron E2242 (1920x1080)</td></tr>
+			<tr id="comment"><th>Comment</th><td>函館の自宅で使用している、テレビ録画用PC。低消費電力のAthlon5350を利用し、24時間稼働のサーバー機としても動作。ゲームサーバーやVPNサーバー、ファイルサーバーなどとして活用中。</td></tr>
+			</table>
+	
+			<p class="name">実家用サブPC</p>
+			<img src="img/subPC.jpg" height="240px">
+			<table class="spec">
+			<tr><th>Case</th><td>RAIJINTEK METIS (Blue)</td></tr>
+			<tr><th>MotherBoard</th><td>ASUS P8H67I REV3.0</td></tr>
+			<tr><th>CPU</th><td>Intel Core i5-3570K</td></tr>
+			<tr><th>CPU Cooler</th><td>CoolerMaster Seidon120XL + Corsair SP120 QE LED (Blue)</td></tr>
+			<tr><th>Memory</th><td>PATRIOT MEMORY DDR3-1600 (8GBx2)</td></tr>
+			<tr><th>GraphicCard</th><td>PowerColor AXR9 270 2GBD5-TDHE/OC</td></tr>
+			<tr><th>SSD (OS)</th><td>ADATA SP900 (128GB)</td></tr>
+			<tr><th>HDD (Data)</th><td>HGST 2.5inch HDD (640GB)</td></tr>
+			<tr><th>PSU</th><td>玄人志向 KRPW-SX400W/90＋ (400W 80+GOLD SFX)</td></tr>
+			<tr><th>OS</th><td>Windows10 Home (64bit)</td></tr>
+			<tr><th>KeyBoard</th><td>iBUFFALO BSKBC02BK</td></tr>
+			<tr><th>Mouse</th><td>FOXXRAY FXR-BM-05</td></tr>
+			<tr><th>Headphone</th><td>Steelseries H3v2 + Razer Surround Pro</td></tr>
+			<tr><th>Monitor</th><td>LG 22MP47HQ-P (1920x1080 AH-IPS)</td></tr>
+			<tr id="comment"><th>Comment</th><td>東京の実家で使用している、サブPC。Mini-ITXサイズの小型ケースに、簡易水冷を搭載して使用中。Pentium G3258からCore i5-3570Kに変更したのでゲーム類も安定動作するようになった。グラフィックボードもそれなりにパワーの有るR9 270を使用しているのである程度のゲームまではプレー可能。</td></tr>
+			</table>
+	
+	
+			<p class="name">実家用録画サーバーPC</p>
+			<img src="img/subTVPC.jpg" height="240px">
+			<table class="spec">
+			<tr><th>Case</th><td>Century CF-A6719BK150</td></tr>
+			<tr><th>MotherBoard</th><td>GIGABYTE GA-J1800N-D2H</td></tr>
+			<tr><th>CPU</th><td>Intel Celeron J1800 (OnBoard)</td></tr>
+			<tr><th>Memory</th><td>S.O.DIMM DDR3-1333 (2GBx2)</td></tr>
+			<tr><th>TV-Chuner</th><td>PLEX PX-S1UD V2.0</td></tr>
+			<tr><th>HDD (Data)</th><td>Unknown 2.5inch HDD (500GB)</td></tr>
+			<tr><th>OS</th><td>WindowsServer2012R2 Essentials (64bit)</td></tr>
+			<tr id="comment"><th>Comment</th><td>東京の実家で使用している、テレビ録画用PC。Mini-ITXサイズの小型ケースにファンレス省電力のマザーを詰め込んでいる。テレビ東京とTOKYO MXさえ録画できればいいので、地上波1波のみのUSBタイプチューナーを採用して録画を行っている。</td></tr>
+			</table>
+		</div>
+	</div>
+</div>
+</body>
+</html>

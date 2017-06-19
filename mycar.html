@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
+<link media="only screen and (min-width: 0px) and (max-width: 568px)" href="css/style_sp.css" type="text/css" rel="stylesheet" />
+
+<title>Self-Introduction</title>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+$(function() {
+$(".tab li").click(function(){
+	var idx = $(".tab li").index(this);
+	var pages = ["index.html", "mycar.html", "pc.html", "products.html"];
+	window.location.href = pages[idx];
+});
+});
+</script>
+
+</head>
+<body>
+
+<div id="main">
+	<div id="header" class="element">
+		<p id="title">Self-Introduction</p>
+		<ul class="tab">
+			<li id="profile_b">プロフィール</li>
+			<li id="mycar_b" class="selected">愛車</li>
+			<li id="mypc_b">PC</li>
+			<li id="software">制作物</li>
+		</ul>
+	</div>
+	<div id="contents">
+		<div id="mycar" class="content">
+		<p class="name">スバル R2</p>
+		<img src="img/mycar.jpg" width="100%">
+		<table class="spec">
+		<tr><th>Comment</th><td>2015年5月より、移動の足として使うために購入したスバルR2です。非力ですが4WDで軽いので冬の雪道でもらくらく走れます。人生初のマイカーはスバルの軽ですが、十分に満足して楽しんでいます。外装には殆ど手を付けていませんが、Androidタブレットのカーナビ化やオーディオの交換、エンジンスターターの取り付けなど内装・電装品に関してはちまちまと弄っています。</td></tr>
+		</table>
+		</div>
+	</div>
+</div>
+</body>
+</html>

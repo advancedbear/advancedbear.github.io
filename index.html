@@ -12,10 +12,8 @@
 $(function() {
 $(".tab li").click(function(){
 	var idx = $(".tab li").index(this);
-	$(".content").hide();
-	$(".content").eq(idx).show();
-	$(".tab li").removeClass('selected');
-	$(this).addClass('selected');
+	var pages = ["index.html", "mycar.html", "pc.html", "products.html"];
+	window.location.href = pages[idx];
 });
 });
 </script>
@@ -46,136 +44,6 @@ $(".tab li").click(function(){
 		<tr><th>Comment</th><td>魅力的な都市ランキング1位の北海道函館市で生活する情報系大学生。自作PCやデジタルガジェットが好き。情報系学生だけどプログラミングはあまりしない。出身は東京。ゲームはFPSと音ゲーをメインにプレー。FPSはBattleField4とTom Clancy's Rainbow Six Siege、音ゲーはBeatmaniaIIDX（Copula九段）とBMSをプレー。</td></tr>
 		</table>
 		</div>
-		</div>
-
-		<div id="mycar" class="content">
-		<p class="name">スバル R2</p>
-		<img src="img/mycar.jpg" width="100%">
-		<table class="spec">
-		<tr><th>Comment</th><td>2015年5月より、移動の足として使うために購入したスバルR2です。非力ですが4WDで軽いので冬の雪道でもらくらく走れます。人生初のマイカーはスバルの軽ですが、十分に満足して楽しんでいます。外装には殆ど手を付けていませんが、Androidタブレットのカーナビ化やオーディオの交換、エンジンスターターの取り付けなど内装・電装品に関してはちまちまと弄っています。</td></tr>
-		</table>
-		</div>
-
-		<div id="mypc" class="content">
-			<p class="name">メインPC</p>
-			<img src="img/mainPC.jpg" height="240px">
-			<table class="spec">
-			<tr><th>Case</th><td>NZXT H440 (Black + Blue)</td></tr>
-			<tr><th>MotherBoard</th><td>GIGABYTE GA-H170-D3H</td></tr>
-			<tr><th>CPU</th><td>Intel Core-i7 6700</td></tr>
-			<tr><th>CPU Cooler</th><td>Scythe 虎徹 + Corsair AF120 Quiet LED(Blue)</td></tr>
-			<tr><th>Memory</th><td>Team DDR4-2133 (8GBx2)</td></tr>
-			<tr><th>GraphicCard</th><td>msi Radeon RX480 GAMING X 4G</td></tr>
-			<tr><th>CaptureCard</th><td>SKNET MonsterTV X3</td></tr>
-			<tr><th>SSD (OS)</th><td>SK Hynix SL300 (240GB)</td></tr>
-			<tr><th>SSD (Games)</th><td>Samsung 840Series (120GB) + 850EVO (240GB) + ADATA SP900 (128GB)</td></tr>
-			<tr><th>HDD (Data)</th><td>WesternDigital WD20EZRX (2TB)</td></tr>
-			<tr><th>PSU</th><td>Scythe KAMARIKI Platinum SPKRP-600 (600W 80+PLATINUM)</td></tr>
-			<tr><th>OS</th><td>Windows10 Home (64bit)</td></tr>
-			<tr><th>KeyBoard</th><td>iBUFFALO BSKBC02BK</td></tr>
-			<tr><th>Mouse</th><td>Razer Taipan</td></tr>
-			<tr><th>Headphone</th><td>Kingston HyperX Cloud Stinger + Razer Surround Pro</td></tr>
-			<tr><th>Monitor</th><td>BenQ XL2420Z (1920x1080 144Hz)</td></tr>
-			<tr id="comment"><th>Comment</th><td>函館の自宅で使用している、メインのPC。今時のゲームをプレーするのに不足しない十分なスペックがあり、ゲームから動画エンコードまでそつなくこなす。H170 Comboからマザーボードを変更し、諸々の不具合は解消されました。</td></tr>
-			</table>
-	
-			<p class="name">録画・サーバーPC</p>
-			<img src="img/serverPC.jpg" height="240px">
-			<table class="spec">
-			<tr><th>Case</th><td>SilverStone SST-PS07B</td></tr>
-			<tr><th>MotherBoard</th><td>ASUS AM1M-A</td></tr>
-			<tr><th>CPU</th><td>AMD Athlon 5350</td></tr>
-			<tr><th>CPU Cooler</th><td>Arctic Alpine M1 Passive</td></tr>
-			<tr><th>Memory</th><td>CFD Elixir W3U1600HQ-4G (4GBx2)</td></tr>
-			<tr><th>SATACard</th><td>ProjectM PCIX2-4PSATA3</td></tr>
-			<tr><th>TV-Tuner Card</th><td>PLEX PX-W3PE Rev.1.3</td></tr>
-			<tr><th>SSD (OS)</th><td>Transcend  TS64GSSD340(64GB)</td></tr>
-			<tr><th>HDD (Data)</th><td>WesternDigital WD20EZRX(2TB)</td></tr>
-			<tr><th>HDD (TVrec1)</th><td>WesternDigital WD20EZRX (2TB)</td></tr>
-			<tr><th>HDD (TVrec2)</th><td>WesternDigital WD30EZRZ-RT (3TB)</td></tr>
-			<tr><th>PSU</th><td>玄人志向 KRPW-P630W/85+ (630W 80+BRONZE)</td></tr>
-			<tr><th>OS</th><td>Windows8.1 (64bit)</td></tr>
-			<tr><th>KeyBoard</th><td>Pokemon Typing Keyboard (Bluetooth)</td></tr>
-			<tr><th>Mouse</th><td>Softbank SB-MO01-BTLS (Bluetooth)</td></tr>
-			<tr><th>USB DAC</th><td>TSdrena HAM-UDAA2</td></tr>
-			<tr><th>Headphone</th><td>AKG K601</td></tr>
-			<tr><th>Monitor</th><td>LG Flatron E2242 (1920x1080)</td></tr>
-			<tr id="comment"><th>Comment</th><td>函館の自宅で使用している、テレビ録画用PC。低消費電力のAthlon5350を利用し、24時間稼働のサーバー機としても動作。ゲームサーバーやVPNサーバー、ファイルサーバーなどとして活用中。</td></tr>
-			</table>
-	
-			<p class="name">実家用サブPC</p>
-			<img src="img/subPC.jpg" height="240px">
-			<table class="spec">
-			<tr><th>Case</th><td>RAIJINTEK METIS (Blue)</td></tr>
-			<tr><th>MotherBoard</th><td>ASUS P8H67I REV3.0</td></tr>
-			<tr><th>CPU</th><td>Intel Core i5-3570K</td></tr>
-			<tr><th>CPU Cooler</th><td>CoolerMaster Seidon120XL + Corsair SP120 QE LED (Blue)</td></tr>
-			<tr><th>Memory</th><td>PATRIOT MEMORY DDR3-1600 (8GBx2)</td></tr>
-			<tr><th>GraphicCard</th><td>PowerColor AXR9 270 2GBD5-TDHE/OC</td></tr>
-			<tr><th>SSD (OS)</th><td>ADATA SP900 (128GB)</td></tr>
-			<tr><th>HDD (Data)</th><td>HGST 2.5inch HDD (640GB)</td></tr>
-			<tr><th>PSU</th><td>玄人志向 KRPW-SX400W/90＋ (400W 80+GOLD SFX)</td></tr>
-			<tr><th>OS</th><td>Windows10 Home (64bit)</td></tr>
-			<tr><th>KeyBoard</th><td>iBUFFALO BSKBC02BK</td></tr>
-			<tr><th>Mouse</th><td>FOXXRAY FXR-BM-05</td></tr>
-			<tr><th>Headphone</th><td>Steelseries H3v2 + Razer Surround Pro</td></tr>
-			<tr><th>Monitor</th><td>LG 22MP47HQ-P (1920x1080 AH-IPS)</td></tr>
-			<tr id="comment"><th>Comment</th><td>東京の実家で使用している、サブPC。Mini-ITXサイズの小型ケースに、簡易水冷を搭載して使用中。Pentium G3258からCore i5-3570Kに変更したのでゲーム類も安定動作するようになった。グラフィックボードもそれなりにパワーの有るR9 270を使用しているのである程度のゲームまではプレー可能。</td></tr>
-			</table>
-	
-	
-			<p class="name">実家用録画サーバーPC</p>
-			<img src="img/subTVPC.jpg" height="240px">
-			<table class="spec">
-			<tr><th>Case</th><td>Century CF-A6719BK150</td></tr>
-			<tr><th>MotherBoard</th><td>GIGABYTE GA-J1800N-D2H</td></tr>
-			<tr><th>CPU</th><td>Intel Celeron J1800 (OnBoard)</td></tr>
-			<tr><th>Memory</th><td>S.O.DIMM DDR3-1333 (2GBx2)</td></tr>
-			<tr><th>TV-Chuner</th><td>PLEX PX-S1UD V2.0</td></tr>
-			<tr><th>HDD (Data)</th><td>Unknown 2.5inch HDD (500GB)</td></tr>
-			<tr><th>OS</th><td>WindowsServer2012R2 Essentials (64bit)</td></tr>
-			<tr id="comment"><th>Comment</th><td>東京の実家で使用している、テレビ録画用PC。Mini-ITXサイズの小型ケースにファンレス省電力のマザーを詰め込んでいる。テレビ東京とTOKYO MXさえ録画できればいいので、地上波1波のみのUSBタイプチューナーを採用して録画を行っている。</td></tr>
-			</table>
-		</div>
-		
-		<div id="software" class="content">
-			<p class="name">Steam SS to Twitter</p>
-			<img src="img/ssst.png">
-			<table class="spec">
-			<tr><th>Description</th><td>ゲームプラットフォームであるSteam上のゲームで撮影したスクリーンショットは、非常に深い階層に保存されるためTwitter等への直接アップロードが面倒です。<br />
-			本ソフトでは、Steamで撮影したスクリーンショットをゲーム別に一覧化し、コメント付きで直接Twitterへ投稿することが出来ます。<br />
-			動作には最新版のJavaと、インターネット接続環境、Twitterアカウントが必要です。</td></tr>
-			<tr><th>Source</th><td><a href="https://github.com/advancedbear/SteamSS-to-Twitter" target="_blank">advancedbear/SteamSS-to-Twitter</a></td></tr>
-			<tr><th>Download</th><td>
-			<a href="https://www.dropbox.com/s/s1cscoer8u3s5d3/SteamSS%20to%20Twitter.zip?dl=0" target="_blank">Dropbox</a>　
-			<a href="https://drive.google.com/open?id=0ByKjO2DrG6HoR2ZGZnF2SVAwU00" target="_blank">Google Drive</a>　
-			<a href="https://1drv.ms/u/s!Akkg5UdFv8QZhbNW2dA3EixJZUBfxw" target="_blank">OneDrive</a></td></tr>
-			</table>
-			<p class="name">Twitch Comment Talker</p>
-			<img src="img/twitchtalker.png">
-			<table class="spec">
-			<tr><th>Description</th><td>ゲームのライブストリーミングサービスであるTwitchで、自分のチャンネルの配信に投稿されたコメント文を、棒読みちゃんへ渡すソフトです。<br />
-			これまで、汎用IRCクライアントにスクリプトやマクロを組むことでしか実装できなかった棒読みちゃん連携を、このソフトでは数回のボタンクリックのみで棒読みちゃんと連携させることが出来ます。<br />
-			動作には最新版のJavaと、インターネット接続環境、棒読みちゃんを実行可能な環境が必要です。</td></tr>
-			<tr><th>Source</th><td><a href="https://github.com/advancedbear/TwitchBouyomi" target="_blank">advancedbear/TwitchBouyomi</a></td></tr>
-			<tr><th>Download</th><td>
-			<a href="https://www.dropbox.com/s/l0wqqhc06srtk8l/Twitch_Bouyomi.zip?dl=0" target="_blank">Dropbox</a>　
-			<a href="https://drive.google.com/open?id=0ByKjO2DrG6HoVXJDUFlkS1VGX2c" target="_blank">Google Drive</a>　
-			<a href="https://1drv.ms/u/s!Akkg5UdFv8QZhbNJiRssfGQJpqbYTQ" target="_blank">OneDrive</a></td></tr>
-			</table>
-			<p class="name">LR2 Result Tweeter</p>
-			<img src="img/LR2tweeter.png">
-			<table class="spec">
-			<tr><th>Description</th><td>音楽ゲームソフトであるLR2beta3で撮影したスクリーンショットを、画面切り替え等のユーザー操作を一切せずとも自動でツイッターへ投稿するソフトです。<br />
-			全画面表示等でプレー中に、画面を切り替えてスクリーンショットをツイートする手間を減らし、成果報告を迅速に行うことが可能です。<br />
-			画像の投稿時に、ヘッダー・フッターを付けて投稿することが可能です。<br />
-			動作には最新版のJavaと、インターネット接続環境、LR2beta3が実行可能な環境が必要です。</td></tr>
-			<tr><th>Source</th><td><a href="https://github.com/advancedbear/LR2-Result-Tweeter" target="_blank">advancedbear/LR2-Result-Tweeter</a></td></tr>
-			<tr><th>Download</th><td>
-			<a href="https://www.dropbox.com/s/e6sq62vfsj7vtgd/LR2%20Result%20Tweeter_0.1.1.zip?dl=0" target="_blank">Dropbox</a>　
-			<a href="https://drive.google.com/open?id=0ByKjO2DrG6HoN3U0TVp3UERwbjA" target="_blank">Google Drive</a>　
-			<a href="https://1drv.ms/u/s!Akkg5UdFv8QZhbNKvHdTkZfAJjKTGw" target="_blank">OneDrive</a></td></tr>
-			</table>
 		</div>
 	</div>
 </div>

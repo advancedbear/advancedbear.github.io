@@ -64,7 +64,7 @@ li:hover{
 }
 
 .content {
-	display: none;
+	//display: none;
 	background: transparent;
 	border: 1px solid rgba(0,0,0,0.1);
 	cursor: default;
@@ -84,6 +84,11 @@ li:hover{
 
 #header {
 	width: 100%;
+}
+
+#footer {
+	width: 100%;
+	text-align: center;
 }
 
 #title {
