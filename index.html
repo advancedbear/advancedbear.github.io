@@ -1,69 +1,547 @@
 ﻿<!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-<meta name="google-site-verification" content="TdK4sCTQ3DP2C127lCf39CfsH_BFVj4zTHF5m1yiEmE" />
-<link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
-<link media="only screen and (min-width: 0px) and (max-width: 568px)" href="css/style_sp.css" type="text/css" rel="stylesheet" />
+	<meta charset="UTF-8">
+    <meta http-equiv="content-language" content="ja">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="keyword" content="advanced_bear,くまもっち,TwitchTalkApp,読み上げ,棒読みちゃん,EPGStation">
+	<meta name="google-site-verification" content="TdK4sCTQ3DP2C127lCf39CfsH_BFVj4zTHF5m1yiEmE" />
+	<meta name="google-site-verification" content="knEUjqKM9qUhU0vz6DSYIvgycNPrjpj0CVMyvn3UwxY" />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="/css/materialize.min.css" media="screen,projection" />
+	<title>advbear.cf</title>
+	<script type="text/javascript" src="/js/jquery.min.js"></script>
+	<script type="text/javascript" src="/js/materialize.min.js"></script>
+	<script>
+		(adsbygoogle = window.adsbygoogle || []).push({
+			google_ad_client: "ca-pub-2795499737457846",
+			enable_page_level_ads: true
+		});
+		$(document).ready(function () {
+			$('.tabs').tabs();
+			$('.sidenav').sidenav();
+			$('.collapsible').collapsible();
+			$(".dropdown-trigger").dropdown({
+				constrainWidth: false,
+				coverTrigger: false,
+				hover: true
+			});
+		});
+	</script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-101268720-2"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
 
-<title>An introduction of advancedbear</title>
-<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript">
-$(function() {
-$(".tab li").click(function(){
-	var idx = $(".tab li").index(this);
-	var pages = ["index.html", "mycar.html", "pc.html", "products.html"];
-	window.location.href = pages[idx];
-});
-});
-</script>
+		gtag('config', 'UA-101268720-2');
+	</script>
 
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({
-          google_ad_client: "ca-pub-2795499737457846",
-          enable_page_level_ads: true
-     });
-</script>
+	<style>
+		.collection {
+			border: none;
+		}
 
+		.collection .collection-item {
+			background-color: transparent;
+		}
+
+		.tabs .tab a {
+			color: rgba(38, 166, 154, 0.8);
+			/*Custom Text Color*/
+		}
+
+		.tabs .tab a:hover {
+			color: #26a69a;
+			/*Custom Color On Hover*/
+		}
+
+		.tabs .tab a.active {
+			background-color: rgba(38, 166, 154, 0.7);
+			color: #000;
+		}
+
+		.tabs .tab a:focus.active {
+			color: #26a69a;
+			/*Custom Text Color While Active*/
+			background-color: rgba(38, 166, 154, 0.1);
+			/*Custom Background Color While Active*/
+		}
+
+		.tabs .tab a.active {
+			color: #26a69a;
+			/*Custom Text Color While Active*/
+			background-color: rgba(38, 166, 154, 0.2);
+			/*Custom Background Color While Active*/
+		}
+
+		.tabs .indicator {
+			background-color: #26a69a;
+			/*Custom Color Of Indicator*/
+		}
+
+		.collapsible {
+			box-shadow: none;
+			border-left: none;
+			border-right: none;
+		}
+
+		.collapsible-header:hover {
+			background-color: rgba(200, 200, 200, 0.2);
+		}
+	</style>
 </head>
-<body>
 
-<div id="main">
-	<div id="header" class="element">
-		<p id="title">Self-Introduction</p>
-		<ul class="tab">
-			<li id="profile_b" class="selected">プロフィール</li>
-			<li id="mycar_b">愛車</li>
-			<li id="mypc_b">PC</li>
-			<li id="software">制作物</li>
-		</ul>
-	</div>
-	<div id="contents">
-		<div id="profile" class="content">
-		<div id="profile_img"><img src="img/icon.png" width="100%"><br />Illustrator:&nbsp;<a href="http://twitter.com/nyomosuke/" target="_blank">@nyomosuke</a></div>
-		<div id="profile_spec">
-		<table class="spec">
-		<tr><th>Name</th><td>くまもっち</td></tr>
-		<tr><th>Twitter</th><td><a href="https://twitter.com/advanced_bear/" target="_blank">@advanced_bear</a></td></tr>
-		<tr><th>Blog</th><td><a href="https://blog.advbear.cf/" target="_blank">ガジェットのある日常</a></td></tr>
-		<tr><th>Photos</th><td><a href="http://photo.advbear.cf/" target="_blank">写真保管庫</a></td></tr>
-		<tr><th>GitHub</th><td><a href="https://github.com/advancedbear" target="_blank">advancedbear</a></td></tr>
-		<tr><th>WishList</th><td><a href="http://amzn.asia/8UBazIU" target="_blank">Amazon ほしいものリスト</a></td></th></tr>
-		<tr><th>Comment</th><td>東京都出身。函館市で大学生活を送り、現在名古屋を拠点に活動する社会人。
-			自作PCやデジタルガジェットが好き。現在はネットワーク関係にお熱。
-			ゲームはFPSと音ゲーはをプレー。
-			本サイトやブログ、Twitter等ではAmazonアソシエイト・プログラムのリンクを使用する事があります。</td></tr>
-		</table>
+<body class="grey lighten-5">
+	<nav>
+		<div class="nav-wrapper teal">
+			<a href="index.html" class="brand-logo center">advbear.cf</a>
+			<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+			<ul class="left hide-on-med-and-down">
+				<li><a href="/index.html"><i class="material-icons">home</i></a></li>
+				<li><a class="dropdown-trigger" data-target="products" href="#!">Products<i
+							class="material-icons right">keyboard_arrow_down</i></a></li>
+			</ul>
 		</div>
+	</nav>
+	<ul id="products" class="dropdown-content" width="200px">
+		<li><a href="/products/tta.html">TwitchTalkApp</a></li>
+		<li><a href="/products/epgsn.html">EPGStation Notifier</a></li>
+		<li><a href="/products/mm.html">Multilingual Master</a></li>
+        <li><a href="/products/tds.html">Tweet Discord Status</a></li>
+		<li class="divider"></li>
+		<li><a href="/products/tct.html">Twitch Comment Talker</a></li>
+		<li><a href="/products/dtb.html">Discord Tweet Bot</a></li>
+		<li><a href="/products/ssst.html">Steam SS to Twitter</a></li>
+		<li><a href="/products/lr2rt.html">LR2 Result Tweeter</a></li>
+	</ul>
+	<ul class="sidenav no-padding" id="mobile-demo">
+		<div class="row">
+			<div class="col s12">
+				<H5 class="center-align">- MENU -</H5>
+			</div>
+		</div>
+		<li><a href="/index.html"><i class="material-icons">home</i>Home</a></li>
+		<li class="divider" style="margin-bottom: 8px;"></li>
+		<div class="row">
+			<div class="col s12">
+				<h6 class="center-align">Products</h6>
+			</div>
+		</div>
+		<li><a href="/products/tta.html"><i class="material-icons">label</i>TwitchTalkApp</a></li>
+		<li><a href="/products/epgsn.html"><i class="material-icons">label</i>EPGStation Notifier</a></li>
+		<li><a href="/products/mm.html"><i class="material-icons">label</i>Multilingual Master</a></li>
+        <li><a href="/products/tds.html"><i class="material-icons">label</i>Tweet Discord Status</a></li>
+		<li class="divider" style="margin-bottom: 8px;"></li>
+		<div class="row">
+			<div class="col s12">
+				<h6 class="center-align">Products<br>(End of Support)</h6>
+			</div>
+		</div>
+		<li><a href="/products/tct.html"><i class="material-icons">label</i>Twitch Comment Talker</a></li>
+		<li><a href="/products/dtb.html"><i class="material-icons">label</i>Discord Tweet Bot</a></li>
+		<li><a href="/products/ssst.html"><i class="material-icons">label</i>Steam SS to Twitter</a></li>
+		<li><a href="/products/lr2rt.html"><i class="material-icons">label</i>LR2 Result Tweeter</a></li>
+	</ul>
+	<div class="container">
+		<div class="section">
+			<div class="row">
+				<div class="col m4 s12">
+					<div class="card-panel white z-depth-1">
+						<div class="row">
+							<div class="col s6 offset-s3">
+								<img src="img/icon.png" alt="" class="circle responsive-img">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col s12">
+								<h5 class="center-align">くまもっち</h5>
+								<p class="center-align">advanced_bear</p>
+								<p>
+									ネットワーク屋さんでサーバを作って繋げるお仕事してる。ソフトウェア制作は趣味。Node.js書いてゲームしてにじさんじ動画を見る日々。
+								</p>
+							</div>
+						</div>
+						<div class="divider"></div>
+						<div class="row">
+							<div class="col s12">
+								<div class="collection">
+									<a href="https://twitter.com/advanced_bear" class="collection-item"
+										target="_blank">Twitter</a>
+									<a href="https://blog.advbear.cf/" class="collection-item" target="_blank">Blog</a>
+									<a href="http://photo.advbear.cf/" class="collection-item"
+										target="_blank">Photos</a>
+									<a href="https://www.twitch.tv/advanced_bear/" class="collection-item"
+										target="_blank">Twitch</a>
+									<a href="https://github.com/advancedbear" class="collection-item"
+										target="_blank">Github</a>
+									<a href="https://amzn.to/2wHxOZv" class="collection-item"
+										target="_blank">WishList</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col m8 s12">
+					<div class="card white">
+						<div class="card-content">
+							<h5 class="center-align">Devices introduction</h5>
+							<p class="center-align">
+								自宅で使用している自作PCやサーバ機などを紹介
+							</p>
+						</div>
+						<div class="card-content no-padding">
+							<ul class="collapsible collapsible-accordion">
+								<li class="active">
+									<div class="collapsible-header"><i class="material-icons">desktop_windows</i>メインPC
+									</div>
+									<div class="collapsible-body no-padding">
+										<img src="img/top1.jpg" width="100%">
+										<div style="padding-left: 1rem; padding-right: 1rem;">
+											<p>自宅で使用している、メインPC。ゲーム、プログラミング、動画編集から日々のネットサーフィンまで、そつなくこなす。</p>
+											<p>コンセプトは「白くて小さい、カワイイけど強い」</p>
+											<table>
+												<tbody>
+													<tr>
+														<th>Case</th>
+														<td>RAIJINTEK METIS PLUS (white)</td>
+													</tr>
+													<tr>
+														<th>MotherBoard</th>
+														<td>GIGABYTE B450 I AORUS PRO WIFI</td>
+													</tr>
+													<tr>
+														<th>CPU</th>
+														<td>AMD Ryzen7 1700 (OC to 3.6GHz)</td>
+													</tr>
+													<tr>
+														<th>CPU Cooler</th>
+														<td>AMD Wratih Spire LED</td>
+													</tr>
+													<tr>
+														<th>Memory</th>
+														<td>Corsair VENGEANCE PRO RGB white (DDR4-3000 / 8GBx2)</td>
+													</tr>
+													<tr>
+														<th>GraphicCard</th>
+														<td>ZOTAC GAMING GeForce RTX 2070 MINI</td>
+													</tr>
+													<tr>
+														<th>SSD (OS)</th>
+														<td>Samsung 970 EVO Plus (512GB / NVMe PCIe3.0x4)</td>
+													</tr>
+													<tr>
+														<th>SSD (Games)</th>
+														<td>ADATA SU650 (960GB)</td>
+													</tr>
+													<tr>
+														<th>SSD (Data)</th>
+														<td>Micron 1100 Series (2048GB)</td>
+													</tr>
+													<tr>
+														<th>PSU</th>
+														<td>Corair SF600 Platinum (SFX / 600W 80+PLATINUM)</td>
+													</tr>
+													<tr>
+														<th>OS</th>
+														<td>Windows10 Pro (64bit)</td>
+													</tr>
+													<tr>
+														<th>KeyBoard</th>
+														<td>Archiss ProgresTouch RETRO TKL (CherryMX Brown)</td>
+													</tr>
+													<tr>
+														<th>Mouse</th>
+														<td>Razer Taipan</td>
+													</tr>
+													<tr>
+														<th>Headphone</th>
+														<td>Kingston HyperX Cloud Stinger</td>
+													</tr>
+													<tr>
+														<th>Speaker</th>
+														<td>Logicool Z313 (2.1ch)</td>
+													</tr>
+													<tr>
+														<th>Microphone</th>
+														<td>Marantz PODPACK 1</td>
+													</tr>
+													<tr>
+														<th>Monitor</th>
+														<td>BenQ XL2420Z (1920x1080 144Hz)</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="collapsible-header"><i class="material-icons">dns</i>録画・仮想基盤サーバ</div>
+									<div class="collapsible-body no-padding">
+										<img src="img/serverPC.jpg" width="100%">
+										<div style="padding-left: 1rem; padding-right: 1rem;">
+											<p>
+												自宅で使用している、汎用サーバ機。
+												24時間稼働のサーバー機としても稼働しており、メインは録画サーバとして利用中。
+												2018年12月に大幅にスペックアップし、仮想化基盤環境としても稼働を開始。
+											</p>
+											<table>
+												<tbody>
+													<tr>
+														<th>Case</th>
+														<td>Antec P100</td>
+													</tr>
+													<tr>
+														<th>MotherBoard</th>
+														<td>GIGABYTE GA-H170-D3H</td>
+													</tr>
+													<tr>
+														<th>CPU</th>
+														<td>Intel Core-i7 6700 (3.40GHz)</td>
+													</tr>
+													<tr>
+														<th>CPU Cooler</th>
+														<td>Scythe 虎徹 Mark2</td>
+													</tr>
+													<tr>
+														<th>Memory</th>
+														<td>Team DDR4 PC4-17000 (8GBx2)</td>
+													</tr>
+													<tr>
+														<th>SATACard</th>
+														<td>ProjectM PCIX2-4PSATA3</td>
+													</tr>
+													<tr>
+														<th>TV-Tuner Card</th>
+														<td>PLEX PX-W3PE Rev.1.3</td>
+													</tr>
+													<tr>
+														<th>SSD (OS)</th>
+														<td>Transcend TS64GSSD340(64GB)</td>
+													</tr>
+													<tr>
+														<th>SSD (VM)</th>
+														<td>Samsung SSD 750EVO(240GB)</td>
+													</tr>
+													<tr>
+														<th>HDD (Data)</th>
+														<td>WesternDigital WD20EZRX(2TB)</td>
+													</tr>
+													<tr>
+														<th>HDD (TVrec1)</th>
+														<td>WesternDigital WD20EZRX (2TB)</td>
+													</tr>
+													<tr>
+														<th>HDD (TVrec2)</th>
+														<td>WesternDigital WD30EZRZ-RT (3TB)</td>
+													</tr>
+													<tr>
+														<th>HDD (TVrec3)</th>
+														<td>Seagate ST4000DM004 (4TB)</td>
+													</tr>
+													<tr>
+														<th>HDD (TVrec4)</th>
+														<td>WesternDigital WD60EZRZ-RT (6TB)</td>
+													</tr>
+													<tr>
+														<th>PSU</th>
+														<td>玄人志向 KRPW-P630W/85+ (630W 80+BRONZE)</td>
+													</tr>
+													<tr>
+														<th>OS</th>
+														<td>Windows Server 2016 Essentials</td>
+													</tr>
+													<tr>
+														<th>KeyBoard & Mouse</th>
+														<td>iBUFFALO BSKBW10SBK</td>
+													</tr>
+													<tr>
+														<th>Monitor</th>
+														<td>LG 22MP48HQ-P (1920x1080 AH-IPS)</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="collapsible-header"><i class="material-icons">desktop_windows</i>サブPC
+									</div>
+									<div class="collapsible-body no-padding">
+										<img src="img/subPC.jpg" width="100%">
+										<div style="padding-left: 1rem; padding-right: 1rem;">
+											<p>
+												東京の実家で使用しているPC。
+												Mini-ITXサイズの小型ケースに、Core i5-3570KとGTX970を押し込んだゲーミングマシン。
+												爆熱グラボを冷やすため簡易水冷をDIYで搭載して使用中
+											</p>
+											<table>
+												<tbody>
+													<tr>
+														<th>Case</th>
+														<td>RAIJINTEK METIS (Blue)</td>
+													</tr>
+													<tr>
+														<th>MotherBoard</th>
+														<td>ASUS P8H67I REV3.0</td>
+													</tr>
+													<tr>
+														<th>CPU</th>
+														<td>Intel Core i5-3570K</td>
+													</tr>
+													<tr>
+														<th>CPU Cooler</th>
+														<td>Scythe 白虎</td>
+													</tr>
+													<tr>
+														<th>Memory</th>
+														<td>PATRIOT MEMORY DDR3-1600 (8GBx1)</td>
+													</tr>
+													<tr>
+														<th>GraphicCard</th>
+														<td>玄人志向 GF-GTX970-E4GB/OC/SHORT</td>
+													</tr>
+													<tr>
+														<th>GPU Cooler</th>
+														<td>CoolerMaster Seidon120XL + Corsair SP120 QE LED (Blue)</td>
+													</tr>
+													<tr>
+														<th>SSD (OS)</th>
+														<td>ADATA SP900 (128GB)</td>
+													</tr>
+													<tr>
+														<th>HDD (Data)</th>
+														<td>HGST 2.5inch HDD (640GB)</td>
+													</tr>
+													<tr>
+														<th>PSU</th>
+														<td>玄人志向 KRPW-SX400W/90＋ (400W 80+GOLD SFX)</td>
+													</tr>
+													<tr>
+														<th>OS</th>
+														<td>Windows10 Home (64bit)</td>
+													</tr>
+													<tr>
+														<th>KeyBoard</th>
+														<td>iBUFFALO BSKBC02BK</td>
+													</tr>
+													<tr>
+														<th>Mouse</th>
+														<td>FOXXRAY FXR-BM-05</td>
+													</tr>
+													<tr>
+														<th>Headphone</th>
+														<td>Kingston HyperX Cloud Core</td>
+													</tr>
+													<tr>
+														<th>Monitor</th>
+														<td>LG 22MP47HQ-P (1920x1080 AH-IPS)</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="collapsible-header"><i class="material-icons">dns</i>遠隔地録画・VPNサーバ</div>
+									<div class="collapsible-body no-padding">
+										<img src="img/subTVPC.jpg" width="100%">
+										<div style="padding-left: 1rem; padding-right: 1rem;">
+											<p>
+												東京の実家で使用している、テレビ録画用サーバ機。
+												GeminiLake世代の省電力SoCを搭載した中華製ベアボーンを利用し、録画サーバ・VPNサーバ・リバプロサーバを稼働。
+												テレビ東京とTOKYO MXさえ録画できればいいので、地上波1波のみのUSBタイプチューナーを採用して録画を行っている。
+											</p>
+											<table>
+												<tbody>
+													<tr>
+														<th>Barebone</th>
+														<td>ACEPC GK1</td>
+													</tr>
+													<tr>
+														<th>SoC</th>
+														<td>Intel Celeron J4105 (OnBoard)</td>
+													</tr>
+													<tr>
+														<th>Memory</th>
+														<td>DDR4-2133 4GB (OnBoard)</td>
+													</tr>
+													<tr>
+														<th>Storage</th>
+														<td>eMMC 32GB (OnBoard)</td>
+													</tr>
+													<tr>
+														<th>TV-Tuner</th>
+														<td>PLEX PX-S1UD V2.0</td>
+													</tr>
+													<tr>
+														<th>OS</th>
+														<td>CentOS 7.5 (4.17.14-1.el7)</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="collapsible-header"><i class="material-icons">router</i>自宅ネットワーク</div>
+									<div class="collapsible-body no-padding">
+										<img src="img/top1.jpg" width="100%">
+										<div style="padding-left: 1rem; padding-right: 1rem;">
+											<p>
+												自宅ネットワーク環境
+											</p>
+											<table>
+												<tbody>
+													<tr>
+														<th>Router</th>
+														<td>NEC UNIVERGE IX2105</td>
+													</tr>
+													<tr>
+														<th>Layer 3 Switch</th>
+														<td>Ubiquiti Networks EdgeRouter ER-X</td>
+													</tr>
+													<tr>
+														<th>Layer 2 Switch</th>
+														<td>TP-LINK TL-SG105</td>
+													</tr>
+													<tr>
+														<th>Wireless AP</th>
+														<td>PLANEX MZK-1200DHP</td>
+													</tr>
+													<tr>
+														<th>NAS</th>
+														<td>NETGEAR ReadyNAS 102 (3TBx2)</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
-	<div id="footer">
-	<a href="https://www.advbear.cf/index.html">
-		<img src="https://ga-beacon.appspot.com/UA-101268720-1/advancedbear.github.io/index.html"/>
-	</a>
-	</div>
-</div>
+	<footer class="page-footer teal">
+		<div class="container">
+			<div class="row">
+				<div class="col s12 center-align">
+					<span class="grey-text text-lighten-4">本サイトやブログ、Twitter等ではAmazonアソシエイト・プログラムのリンクを使用する事があります。<br>
+						また、本サイトではGoogle Analyticsによるアクセス解析を実施しています。</span>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<div class="container center-align">
+				© 2019 advanced_bear All rights reserved.
+			</div>
+		</div>
+	</footer>
 </body>
+
 </html>
