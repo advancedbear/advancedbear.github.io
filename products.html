@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="content-language" content="ja">
+
+    <script>
+        var pageLink = {
+            MultilingualMaster: "/products/mm.html",
+            TwitchTalkApp: "/products/tta.html",
+            DiscordTweet: "/products/dtb.html",
+            twct: "/products/tct.html",
+            ssst: "/products/ssst.html",
+            lr2t: "/products/lr2rt.html"
+        }
+        window.onload = function () {
+            setTimeout(() => {
+                hash = location.hash.slice(1)
+                if (hash != null && pageLink[hash] != null) {
+                    location.href = pageLink[hash]
+                } else {
+                    location.href = "/"
+                }
+            }, 3000)
+        }
+    </script>
+</head>
+
+<body>
+    <div style="width: 100vw; height: 100vh;">
+        <p style="position:relative; margin:0 auto; text-align: center; top: 40%">
+            The page was moved.<br>
+            Automatically move in 3 seconds.<br>
+            <a href="/">Back to Top Page</a>
+        </p>
+    </div>
+</body>
+
+</html>
