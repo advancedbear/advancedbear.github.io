@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
-    <meta http-equiv="content-language" content="ja">
+	<meta http-equiv="content-language" content="ja">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<meta name="keyword" content="advanced_bear,くまもっち,TwitchTalkApp,読み上げ,棒読みちゃん,EPGStation">
 	<meta name="google-site-verification" content="TdK4sCTQ3DP2C127lCf39CfsH_BFVj4zTHF5m1yiEmE" />
@@ -22,6 +22,10 @@
 			$('.tabs').tabs();
 			$('.sidenav').sidenav();
 			$('.collapsible').collapsible();
+			$('.carousel.carousel-slider').carousel({
+				fullWidth: true,
+    			indicators: true
+			});
 			$(".dropdown-trigger").dropdown({
 				constrainWidth: false,
 				coverTrigger: false,
@@ -110,7 +114,7 @@
 		<li><a href="/products/tta.html">TwitchTalkApp</a></li>
 		<li><a href="/products/epgsn.html">EPGStation Notifier</a></li>
 		<li><a href="/products/mm.html">Multilingual Master</a></li>
-        <li><a href="/products/tds.html">Tweet Discord Status</a></li>
+		<li><a href="/products/tds.html">Tweet Discord Status</a></li>
 		<li class="divider"></li>
 		<li><a href="/products/tct.html">Twitch Comment Talker</a></li>
 		<li><a href="/products/dtb.html">Discord Tweet Bot</a></li>
@@ -133,7 +137,7 @@
 		<li><a href="/products/tta.html"><i class="material-icons">label</i>TwitchTalkApp</a></li>
 		<li><a href="/products/epgsn.html"><i class="material-icons">label</i>EPGStation Notifier</a></li>
 		<li><a href="/products/mm.html"><i class="material-icons">label</i>Multilingual Master</a></li>
-        <li><a href="/products/tds.html"><i class="material-icons">label</i>Tweet Discord Status</a></li>
+		<li><a href="/products/tds.html"><i class="material-icons">label</i>Tweet Discord Status</a></li>
 		<li class="divider" style="margin-bottom: 8px;"></li>
 		<div class="row">
 			<div class="col s12">
@@ -198,9 +202,17 @@
 									<div class="collapsible-header"><i class="material-icons">desktop_windows</i>メインPC
 									</div>
 									<div class="collapsible-body no-padding">
-										<img src="img/top1.jpg" width="100%">
+										<div class="carousel carousel-slider">
+											<a class="carousel-item"><img src="img/IMG_0706.jpg"></a>
+											<a class="carousel-item"><img src="img/IMG_0681.jpg"></a>
+											<a class="carousel-item"><img src="img/IMG_0682.jpg"></a>
+											<a class="carousel-item"><img src="img/IMG_0693.jpg"></a>
+											<a class="carousel-item"><img src="img/IMG_0694.jpg"></a>
+										</div>
 										<div style="padding-left: 1rem; padding-right: 1rem;">
-											<p>自宅で使用している、メインPC。ゲーム、プログラミング、動画編集から日々のネットサーフィンまで、そつなくこなす。</p>
+											<p>自宅で使用している、メインPC。ゲーム、プログラミング、動画編集から日々のネットサーフィンまで、そつなくこなす。
+												12コア24スレッドのRyzen9 3900Xを導入し、ありとあらゆる用途に耐えうる性能を獲得。
+											</p>
 											<p>コンセプトは「白くて小さい、カワイイけど強い」</p>
 											<table>
 												<tbody>
@@ -214,15 +226,15 @@
 													</tr>
 													<tr>
 														<th>CPU</th>
-														<td>AMD Ryzen7 1700 (OC to 3.6GHz)</td>
+														<td>AMD Ryzen9 3900X</td>
 													</tr>
 													<tr>
 														<th>CPU Cooler</th>
-														<td>AMD Wratih Spire LED</td>
+														<td>CRYORIG H7 QUAD LUMI</td>
 													</tr>
 													<tr>
 														<th>Memory</th>
-														<td>Corsair VENGEANCE PRO RGB white (DDR4-3000 / 8GBx2)</td>
+														<td>Corsair VENGEANCE PRO RGB white (DDR4-3200 / 16GBx2)</td>
 													</tr>
 													<tr>
 														<th>GraphicCard</th>
@@ -254,7 +266,7 @@
 													</tr>
 													<tr>
 														<th>Mouse</th>
-														<td>Razer Taipan</td>
+														<td>Logicool G703d Wireless</td>
 													</tr>
 													<tr>
 														<th>Headphone</th>
